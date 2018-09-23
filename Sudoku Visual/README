@@ -1,0 +1,43 @@
+Forest Yan
+Steve Min
+Kao-Ying Chen
+    
+Sources:    
+    http://norvig.com/sudoku.html
+    http://www.scanraid.com/BasicStrategies.htm
+    http://www.sudokudragon.com/sudokustrategy.htm
+    http://www.krazydad.com/blog/2005/09/29/an-index-of-sudoku-strategies/
+    http://www2.warwick.ac.uk/fac/sci/moac/currentstudents/peter_cock/python/sudoku/
+
+Requirements:
+    All files must be in the current directory
+        Program Files:
+            -SudokuAC3-DFS4x4.py
+        
+        Test Files:
+            - sudo4x4_test_extra_boards.txt
+            - sudo4x4_test_board.txt (contains one test, more boards are included in sudo4x4_test_extra_boards.txt)
+
+
+Inputs:
+    Board Format: Text file containing 16 digits or blanks on each line.
+                    '.' and '0' are acceptable replacements for blanks
+                    Each line in the test file is a board.
+                    Multiple boards may be run from one text file.
+Execution:
+    Inside the program file, edit the "solve_all" and "solve_allbasic" to include the filename of the test file.
+    
+    Command line execution:
+        python SudokuAC3-DFS4x4.py
+    
+Error Handling:
+    - Board with incorrect format like two 1's on a line in the board will fail and the 
+    next test will execute or end the program if there are no more tests.
+      
+    - In Test file, if an invalid board is entered an error message will be shown.
+    
+    
+Basically, we added visual representations of the algorithms' progress through the "display"
+fucntion. They print applicable information about the board depending on which algorithm is 
+running.
+            
